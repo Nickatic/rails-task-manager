@@ -1,0 +1,8 @@
+<div class="task">
+  <input type="checkbox" disabled <%= 'checked' if @task.completed %>>
+  <h1><%= @task.title %></h1>
+
+  <p>details : <%= @task.details %></p>
+</div>
+
+<%= link_to "Back to the to do list", tasks_path %>
